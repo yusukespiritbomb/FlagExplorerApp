@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>{{ country.name }}</h2>
+<div mat-dialog-content>
+  <img [src]="country.flag" [alt]="country.name" style="width: 100%; height: auto; margin-bottom: 16px;" />
+  <p><strong>Capital:</strong> {{ country.capital }}</p>
+  <p><strong>Population:</strong> {{ country.population | number }}</p>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Close</button>
+</div>

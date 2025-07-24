@@ -1,0 +1,10 @@
+<div class="country-grid">
+  <div
+    class="country-card"
+    *ngFor="let country of countries"
+    (click)="onCountryClick(country)"
+  >
+    <img src="{{country.flag}}" [alt]="country.name + ' flag'" class="flag"/>
+    <div class="country-name">{{ country.name }}</div>
+  </div>
+</div>
